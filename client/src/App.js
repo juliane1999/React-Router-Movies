@@ -36,12 +36,12 @@ export default function App () {
       <div>
         <Switch>
 
-          <Route path = '/movies/'>
-            <Movie />
+          <Route path = '/movies/:movieId'>
+            <Movie movies={movieList}/>
           </Route>
 
-          <Route path = '/'>
-            <MovieList  />
+          <Route path = '/movies'>
+            <MovieList movies={movieList}  />
           </Route>
 
         </Switch>
