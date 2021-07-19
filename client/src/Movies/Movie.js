@@ -7,7 +7,7 @@ export default function Movie(props) {
  
   const {movies} = props
   const {movieId} = useParams()
-  console.log(movie)
+  
 
   let id = movies.find(item => item.id == movieId)
 
